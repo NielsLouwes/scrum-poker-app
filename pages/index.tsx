@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styled from "styled-components";
+import ResultsSection from '@/components/ResultsSection';
 
 type Card = {
   id: number;
@@ -85,8 +86,14 @@ const Cards = [
 const Wrapper = styled.div`
   width: 60vw;
   display: flex;
+  flex: 2;
   flex-wrap: wrap;
   gap: 10px 20px;
+`;
+
+const OuterWrapper = styled.div`
+  display: flex;
+ 
 `;
 
 const Card = styled.div`
@@ -97,10 +104,16 @@ const Card = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+const Container = styled.div`
+  border: 1px solid black;
+  flex: 1;
+`
 export default function Home() {
   return (
     <>
       <h1>Dev Poker</h1>
+      <OuterWrapper>
       <Wrapper>
         {Cards.map((item) => (
           <Card  key={item.id}>
@@ -108,6 +121,10 @@ export default function Home() {
           </Card>
         ))}
       </Wrapper> 
+      <Container>
+          <ResultsSection />
+      </Container>
+    </OuterWrapper>
     </>
   )
 }
