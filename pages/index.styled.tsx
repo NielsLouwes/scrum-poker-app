@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+type Card = {
+  id?: number;
+  title?: string | number;
+  score?: number;
+};
+
 export const Wrapper = styled.div`
   width: 60vw;
   display: flex;
@@ -13,7 +19,7 @@ export const OuterWrapper = styled.div`
  
 `;
 
-export const Card = styled.div`
+export const Card = styled.div<Card>`
   width: 100px;
   height: 50px;
   border: 1px solid black;
