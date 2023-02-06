@@ -4,7 +4,9 @@ export default function ResultsSection({ result }) {
   return (
     <>
       <div>ResultsSection</div>
-      <p>{result && result.id}</p>
+      <p>Name: </p>
+      <p>Points: </p>
+      <p>{result && result.score}</p>
     </>
   );
 }

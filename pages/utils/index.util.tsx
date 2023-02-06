@@ -63,7 +63,7 @@ const Cards = [
   {
     id: 13,
     title: "?",
-    score: null
+    score: "?"
   },
   {
     id: 14,
