@@ -1,6 +1,13 @@
 import React from "react";
 
-export default function ResultsSection({ result }) {
+interface ResultsSectionProps {
+  result: {
+    name: string;
+    score: number;
+  };
+}
+
+export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) =>  {
   return (
     <>
       <div>ResultsSection</div>
@@ -10,3 +17,5 @@ export default function ResultsSection({ result }) {
     </>
   );
 }
+
+
