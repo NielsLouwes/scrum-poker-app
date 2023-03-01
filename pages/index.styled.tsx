@@ -32,3 +32,12 @@ export const Container = styled.div`
   border: 1px solid black;
   flex: 1;
 `
+
+export const UserContainer = styled.div`
+  border-bottom: 1px solid black;
+  width: 85%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`

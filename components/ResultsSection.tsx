@@ -1,3 +1,4 @@
+import { UserContainer } from "@/pages/index.styled";
 import React from "react";
 
 interface ResultsSectionProps {
@@ -7,15 +8,15 @@ interface ResultsSectionProps {
   };
 }
 
-export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) =>  {
+export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
   return (
     <>
       <div>ResultsSection</div>
-      <p>Name: </p>
-      <p>Points: </p>
+      <UserContainer>
+        <p>Name: </p>
+        <p>Story Points: </p>
+      </UserContainer>
       <p>{result && result.score}</p>
     </>
   );
-}
-
-
+};
