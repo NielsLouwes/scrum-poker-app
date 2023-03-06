@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <MainHeader>Dev Poker</MainHeader>
+      <MainHeader>Dev Scrum Poker</MainHeader>
       <OuterWrapper>
         <Wrapper>
           {indexUtil?.Cards.map((item) => (

@@ -2,8 +2,6 @@ import { UserContainer } from "@/pages/index.styled";
 import React from "react";
 import { ResultsSectionStyled } from "./ResultsSection.styled";
 
-
-
 interface ResultsSectionProps {
   result: {
     name: string;
@@ -14,14 +12,21 @@ interface ResultsSectionProps {
 export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
   return (
     <>
-      <ResultsSectionStyled.Heading>ResultsSection</ResultsSectionStyled.Heading>
+      <ResultsSectionStyled.Heading>
+        ResultsSection
+      </ResultsSectionStyled.Heading>
       <UserContainer>
         <p>Name: </p>
         <p>Story Points: </p>
       </UserContainer>
       <ResultsSectionStyled.ScoreContainer>
-        <ResultsSectionStyled.Text>{result && result.score}</ResultsSectionStyled.Text>
+        <ResultsSectionStyled.Text>
+          {result && result.score}
+        </ResultsSectionStyled.Text>
       </ResultsSectionStyled.ScoreContainer>
+      <ResultsSectionStyled.ButtonContainer>
+        <ResultsSectionStyled.Button>Show</ResultsSectionStyled.Button>
+      </ResultsSectionStyled.ButtonContainer>
     </>
   );
 };
