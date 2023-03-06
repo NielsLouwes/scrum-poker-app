@@ -13,6 +13,9 @@ const ScoreContainer = styled.div`
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 const Text = styled.p`
