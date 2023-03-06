@@ -2,7 +2,7 @@ import { Inter } from "@next/font/google";
 import styled from "styled-components";
 import { useState } from "react";
 import { indexUtil } from "./utils/index.util";
-import { Card, Container, OuterWrapper, Wrapper } from "./index.styled";
+import { Card, Container, OuterWrapper, Wrapper , MainHeader} from "./index.styled";
 import { ResultsSection } from "@/components/ResultsSection/ResultsSection";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>Dev Poker</h1>
+      <MainHeader>Dev Poker</MainHeader>
       <OuterWrapper>
         <Wrapper>
           {indexUtil?.Cards.map((item) => (

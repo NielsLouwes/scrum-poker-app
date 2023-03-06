@@ -41,3 +41,7 @@ export const UserContainer = styled.div`
   justify-content: space-around;
   align-items: center;
 `
+
+export const MainHeader = styled.h1`
+  text-align: center;
+`

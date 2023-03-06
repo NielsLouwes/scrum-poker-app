@@ -14,7 +14,7 @@ interface ResultsSectionProps {
 export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
   return (
     <>
-      <div>ResultsSection</div>
+      <ResultsSectionStyled.Heading>ResultsSection</ResultsSectionStyled.Heading>
       <UserContainer>
         <p>Name: </p>
         <p>Story Points: </p>

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const Heading = styled.h2`
+text-align: center;
+`
+
 const ScoreContainer = styled.div`
   width: 80%;
   margin-left: 10%;
@@ -14,4 +18,5 @@ padding-right: 55px;
 export const ResultsSectionStyled = {
   ScoreContainer,
   Text,
+  Heading,
 };
