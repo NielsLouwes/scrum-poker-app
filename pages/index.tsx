@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { indexUtil } from "./utils/index.util";
 import { Card, Container, OuterWrapper, Wrapper } from "./index.styled";
-import { ResultsSection } from "@/components/ResultsSection";
+import { ResultsSection } from "@/components/ResultsSection/ResultsSection";
 
 export default function Home() {
   const [result, setResult] = useState([]);
